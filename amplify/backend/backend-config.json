@@ -1,0 +1,9 @@
+{
+	"function": {
+		"suumostalk": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true
+		}
+	}
+}
