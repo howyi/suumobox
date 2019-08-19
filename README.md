@@ -1,5 +1,6 @@
-
 [![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/howyi/suumobox)
+# 機能概要
+スーモのツイートをSlackに送信します。
 # Amplify Consoleを使用してデプロイ
 ## 事前準備
 - SlackのIncoming WebhookのURLがあること
@@ -7,6 +8,8 @@
 ## デプロイ
 - 上記 `DEPLOY TO AMPLIFY CONSOLE` ボタンをクリックし、コンソールの手順に従ってデプロイする
 - 反映後、Lambda `suumostalk-amplify` のコンソールへアクセスし、Slack,Twitterの設定を記載
+## 構成
+![](https://cdn-ak.f.st-hatena.com/images/fotolife/h/howyi/20190816/20190816111233.png)
 ---
 <details><summary>手動インストール方法（クリックして展開）</summary>
 
