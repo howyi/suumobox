@@ -8,7 +8,8 @@
 - 上記 `DEPLOY TO AMPLIFY CONSOLE` ボタンをクリックし、コンソールの手順に従ってデプロイする
 - 反映後、Lambda `suumostalk-amplify` のコンソールへアクセスし、Slack,Twitterの設定を記載
 ---
-# 手動インストール
+<details><summary>手動インストール方法（クリックして展開）</summary>
+
 ## 事前準備
 - SlackのIncoming WebhookのURLがあること
 - TwitterのTokenを持っていること
@@ -20,3 +21,5 @@
 2. `./amplify/backend/function/suumostalk/suumostalk-cloudformation-template.json` の `####` となっている部分を書き換える
 3. $ amplify init
 4. $ amplify push
+
+</details>
