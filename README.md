@@ -5,9 +5,9 @@
 - SlackのIncoming WebhookのURLがあること
 - TwitterのTokenを持っていること
 ## デプロイ
-- 上記 `DEPLOY TO AMPLIFY CONSOLE` をクリックし、手順に従ってデプロイする
+- 上記 `DEPLOY TO AMPLIFY CONSOLE` ボタンをクリックし、コンソールの手順に従ってデプロイする
 - 反映後、Lambda `suumostalk-amplify` のコンソールへアクセスし、Slack,Twitterの設定を記載
-
+---
 # 手動インストール
 ## 事前準備
 - SlackのIncoming WebhookのURLがあること
