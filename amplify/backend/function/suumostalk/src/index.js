@@ -14,6 +14,13 @@ const webhook = new IncomingWebhook(process.env.SLACK_WEBHOOK_URL);
 
 const Twitter = require('twitter');
 
+let undefinedEnv = [];
+Object.keys(process.env).forEach(function (key) {
+    if ('####' === process.env[key]) {
+        undefinedEnv.push(key);
+    }
+});
+
 // Lambdaの環境変数からTwitterの設定を取得する
 const twitterClient = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -29,6 +36,11 @@ if(process.env.ENV && process.env.ENV !== "NONE") {
 
 // ① CloudWatch Eventsで定期的に実行される想定
 exports.handler = async function (event, context) { //eslint-disable-line
+
+    if (undefinedEnv.length > 0) {
+        console.error('Undefined environments', undefinedEnv);
+        return;
+    }
 
     let param = {
         screen_name: 'suumo',
